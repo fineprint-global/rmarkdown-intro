@@ -109,7 +109,7 @@ And add `## References` at the end of the document.
 
 
 
-## Publishing Rmarkdown page
+## Creating Rmarkdown site
 
 Create a new file called `_site.yml` and add the following content
 
@@ -127,11 +127,19 @@ navbar:
 
 
 
-
-
 ## Adding Rmarkdown pages
 
-Create a new file called `Rmd` and add the following content
+Create a new file called `about.Rmd` and add the following content
+
+```{}
+---
+  title: "About This Website"
+---
+  
+  More about this website.
+```
+
+And update the file `_site.yml`
 
 ```{}
 name: "Rmarkdown intro"
@@ -144,6 +152,13 @@ navbar:
       href: about.html
 ```
 
+
+## Publishing Rmarkdown page on Github pages
+
+1. Commit and push your changes to Github
+2. Got to your Github project 
+3. Go to settings/options
+4. Select a theme and master branch
 
 
 
