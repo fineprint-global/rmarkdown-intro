@@ -95,7 +95,7 @@ Acording to @Wieland:2017...
 
 [@Bruckner:2012]
 
-[@Wieland:2017, @Bruckner:2012]
+[@Wieland:2017; @Bruckner:2012]
 
 And add `## References` at the end of the document.
 
@@ -112,6 +112,7 @@ Create a new file called `_site.yml` and add the following content
 
 ```{}
 name: "Rmarkdown intro"
+output_dir: "."
 navbar:
   title: "Rmarkdown intro"
   left:
@@ -140,6 +141,7 @@ And update the file `_site.yml`
 
 ```{}
 name: "Rmarkdown intro"
+output_dir: "."
 navbar:
   title: "Rmarkdown intro"
   left:
@@ -155,7 +157,7 @@ navbar:
 1. Commit and push your changes to Github
 2. Got to your Github project 
 3. Go to settings/options
-4. Select a theme and master branch
+4. In GitHub Pages select and master branch
 
 
 
