@@ -254,13 +254,14 @@ This is a figure.
 <p>First add <code>bibliography: references.bib</code> to the head. The cite using the tags in the <em>BibTex</em> file, such that</p>
 <p>Acording to <span class="citation">Wieland et al. (2017)</span>…</p>
 <p><span class="citation">(Bruckner et al. 2012)</span></p>
-<p><span class="citation">(Wieland et al. 2017, <span class="citation">Bruckner et al. (2012)</span>)</span></p>
+<p><span class="citation">(Wieland et al. 2017; Bruckner et al. 2012)</span></p>
 <p>And add <code>## References</code> at the end of the document.</p>
 </div>
 <div id="creating-rmarkdown-site" class="section level2">
 <h2>Creating Rmarkdown site</h2>
 <p>Create a new file called <code>_site.yml</code> and add the following content</p>
 <pre><code>name: &quot;Rmarkdown intro&quot;
+output_dir: &quot;.&quot;
 navbar:
   title: &quot;Rmarkdown intro&quot;
   left:
@@ -279,6 +280,7 @@ navbar:
   More about this website.</code></pre>
 <p>And update the file <code>_site.yml</code></p>
 <pre><code>name: &quot;Rmarkdown intro&quot;
+output_dir: &quot;.&quot;
 navbar:
   title: &quot;Rmarkdown intro&quot;
   left:
@@ -293,7 +295,7 @@ navbar:
 <li>Commit and push your changes to Github</li>
 <li>Got to your Github project</li>
 <li>Go to settings/options</li>
-<li>Select a theme and master branch</li>
+<li>In GitHub Pages select and master branch</li>
 </ol>
 </div>
 <div id="references" class="section level2 unnumbered">
