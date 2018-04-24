@@ -9,9 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Victor Maus" />
 
-<meta name="date" content="2018-04-24" />
 
 <title>Rmarkdown intro</title>
 
@@ -198,8 +196,6 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Rmarkdown intro</h1>
-<h4 class="author"><em>Victor Maus</em></h4>
-<h4 class="date"><em>24 April 2018</em></h4>
 
 </div>
 
@@ -256,9 +252,9 @@ This is a figure.
 <div id="including-references" class="section level2">
 <h2>Including references</h2>
 <p>First add <code>bibliography: references.bib</code> to the head. The cite using the tags in the <em>BibTex</em> file, such that</p>
-<p>Acording to <span class="citation">Wieland et al. (2017)</span>…</p>
-<p><span class="citation">(Bruckner et al. 2012)</span></p>
-<p><span class="citation">(Wieland et al. 2017, <span class="citation">Bruckner et al. (2012)</span>)</span></p>
+<p>Acording to <span class="citation">@Wieland:2017</span>…</p>
+<p><span class="citation">[@Bruckner:2012]</span></p>
+<p><span class="citation">[@Wieland:2017, @Bruckner:2012]</span></p>
 <p>And add <code>## References</code> at the end of the document.</p>
 </div>
 <div id="publishing-rmarkdown-page" class="section level2">
@@ -285,16 +281,8 @@ navbar:
     - text: &quot;About&quot;
       href: about.html</code></pre>
 </div>
-<div id="references" class="section level2 unnumbered">
+<div id="references" class="section level2">
 <h2>References</h2>
-<div id="refs" class="references">
-<div id="ref-Bruckner:2012">
-<p>Bruckner, Martin, Stefan Giljum, Christian Lutz, and Kirsten Svenja Wiebe. 2012. “Materials embodied in international trade–Global material extraction and consumption between 1995 and 2005.” <em>Global Environmental Change</em>.</p>
-</div>
-<div id="ref-Wieland:2017">
-<p>Wieland, Hanspeter, Stefan Giljum, Martin Bruckner, Anne Owen, and Richard Wood. 2017. “Structural production layer decomposition: a new method to measure differences between MRIO databases for footprint assessments.” <em>Economic Systems Research</em>, 1–24. doi:<a href="https://doi.org/\url{10.1080/09535314.2017.1350831}">\url{10.1080/09535314.2017.1350831}</a>.</p>
-</div>
-</div>
 </div>
 
 

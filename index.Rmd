@@ -1,9 +1,5 @@
 ---
 title: "Rmarkdown intro"
-author: "Victor Maus"
-date: "24 April 2018"
-output: html_document
-bibliography: references.bib
 ---
 
 
