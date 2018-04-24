@@ -1,0 +1,154 @@
+---
+title: "Rmarkdown intro"
+author: "Victor Maus"
+date: "24 April 2018"
+output: html_document
+bibliography: references.bib
+---
+
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+
+
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE, fig.cap = "This is a figure.", }
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. 
+
+
+
+
+
+## Markdown Basics
+
+Markdown provides an easy way to make standard types of formatted text, like
+
+- *italics*
+- **bold**
+- `code`
+- [links](rmarkdown.rstudio.com)
+- etc.
+
+But did you know that you can also use R Markdown's markdown to make
+
+- Latex equations, $E = mc^{2}$
+
+
+
+
+
+
+## Adding links 
+
+To link a web page use `[FINEPRINT](http://fineprint.global/)`, the result is [FINEPRINT](http://fineprint.global/)
+
+Link a figure from the web using: `![](http://www.exemplo.png)`. The result is 
+
+![](http://www.fineprint.global/wp-content/uploads/2017/10/fineprint_w_erc.png)
+
+To link a figure in a local folder use `![optional caption text](figures/img.png)`
+
+
+
+
+
+
+
+
+
+
+
+
+## Including references
+
+
+First add `bibliography: references.bib` to the head. The cite using the tags in the *BibTex* file, such that
+
+Acording to @Wieland:2017...
+
+[@Bruckner:2012]
+
+[@Wieland:2017, @Bruckner:2012]
+
+And add `## References` at the end of the document.
+
+
+
+
+
+
+
+
+## Publishing Rmarkdown page
+
+Create a new file called `_site.yml` and add the following content
+
+```{}
+name: "Rmarkdown intro"
+navbar:
+  title: "Rmarkdown intro"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+```
+
+
+
+
+
+
+## Adding Rmarkdown pages
+
+Create a new file called `Rmd` and add the following content
+
+```{}
+name: "Rmarkdown intro"
+navbar:
+  title: "Rmarkdown intro"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+```
+
+
+
+
+
+
+
+## References
+
