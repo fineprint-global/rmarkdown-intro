@@ -1,5 +1,6 @@
 ---
 title: "Rmarkdown intro"
+bibliography: references.bib
 ---
 
 
@@ -64,7 +65,7 @@ But did you know that you can also use R Markdown's markdown to make
 
 
 
-## Adding links 
+## Adding links and figures
 
 To link a web page use `[FINEPRINT](http://fineprint.global/)`, the result is [FINEPRINT](http://fineprint.global/)
 
