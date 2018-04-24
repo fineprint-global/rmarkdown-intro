@@ -257,8 +257,8 @@ This is a figure.
 <p><span class="citation">(Wieland et al. 2017, <span class="citation">Bruckner et al. (2012)</span>)</span></p>
 <p>And add <code>## References</code> at the end of the document.</p>
 </div>
-<div id="publishing-rmarkdown-page" class="section level2">
-<h2>Publishing Rmarkdown page</h2>
+<div id="creating-rmarkdown-site" class="section level2">
+<h2>Creating Rmarkdown site</h2>
 <p>Create a new file called <code>_site.yml</code> and add the following content</p>
 <pre><code>name: &quot;Rmarkdown intro&quot;
 navbar:
@@ -271,7 +271,13 @@ navbar:
 </div>
 <div id="adding-rmarkdown-pages" class="section level2">
 <h2>Adding Rmarkdown pages</h2>
-<p>Create a new file called <code>Rmd</code> and add the following content</p>
+<p>Create a new file called <code>about.Rmd</code> and add the following content</p>
+<pre><code>---
+  title: &quot;About This Website&quot;
+---
+  
+  More about this website.</code></pre>
+<p>And update the file <code>_site.yml</code></p>
 <pre><code>name: &quot;Rmarkdown intro&quot;
 navbar:
   title: &quot;Rmarkdown intro&quot;
@@ -280,6 +286,15 @@ navbar:
       href: index.html
     - text: &quot;About&quot;
       href: about.html</code></pre>
+</div>
+<div id="publishing-rmarkdown-page-on-github-pages" class="section level2">
+<h2>Publishing Rmarkdown page on Github pages</h2>
+<ol style="list-style-type: decimal">
+<li>Commit and push your changes to Github</li>
+<li>Got to your Github project</li>
+<li>Go to settings/options</li>
+<li>Select a theme and master branch</li>
+</ol>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
